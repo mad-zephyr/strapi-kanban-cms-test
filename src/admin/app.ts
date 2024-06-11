@@ -3,6 +3,8 @@ export default {
     translations: {
       en: {
         "app.components.LeftMenu.navbrand.title": "Dashboard",
+        "Auth.form.welcome.subtitle": "Log in to your Aquaterra account",
+        "Auth.form.welcome.title": "Welcome to Aquaterra!",
       },
     },
     locales: [
@@ -34,7 +36,7 @@ export default {
       // 'zh',
     ],
   },
-  bootstrap(app) {
+  bootstrap(app: any) {
     console.log(app);
   },
 };

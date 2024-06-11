@@ -1,0 +1,34 @@
+{
+    "kind": "collectionType",
+    "collectionName": "zones",
+    "info": {
+        "singularName": "zone",
+        "pluralName": "zones",
+        "displayName": "Fitness Zone",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string"
+        },
+        "branches": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::branch.branch",
+            "inversedBy": "zones"
+        }
+    }
+}
